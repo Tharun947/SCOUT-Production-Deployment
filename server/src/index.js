@@ -23,7 +23,14 @@ const PORT = process.env.PORT || 5000
 
 // ── Middleware ────────────────────────────────────────────────────────────────
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000', 'http://127.0.0.1:5173', 'https://p000415-se-scout-school-safety-dash.vercel.app'],
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'http://127.0.0.1:5173',
+    'https://p000415-se-scout-school-safety-dash.vercel.app',
+    'https://scout-production-deployment.vercel.app',
+    'https://scout-production-deployment-7kezgudh7-tharun947s-projects.vercel.app'
+  ],
   credentials: true,
 }))
 app.use(express.json())//parse JSON request bodies
